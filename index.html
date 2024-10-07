@@ -11,9 +11,12 @@
 
 <section class="app">
    <div class="header">
-    <span>Wiwi app</span>
-    <input type="text" placeholder="search city">
-    <button>search</button>
+    <span>Wiwi</span>
+    <form id="weatherForm">
+        <input id="input" type="text" placeholder="Enter city" />
+        <button id="button" type="submit">Search</button>
+      </form>
+    
    </div>
    
 
@@ -33,21 +36,21 @@
    <div class="two">
     <div class="cityicons">
         <img src="https://img.icons8.com/ios/50/000000/sunny" />
-        <span id="country">Country</span>
+        <span >Country</span>
     </div>
     <div class="city">
-        <span>UK</span>
+        <span id="country">UK</span>
     </div>
    </div>
 </div>
 
    <div class="tri">
     <div class="cityicons">
-        <img src="https://img.icons8.com/ios/50/000000/sunny" />
+        <img id="wicon" src="https://img.icons8.com/ios/50/000000/sunny" />
         <span>Tempriture</span>
     </div>
     <div class="city">
-        <span>36C</span>
+        <span id="temp">36C</span>
     </div>
    </div>
 </div>

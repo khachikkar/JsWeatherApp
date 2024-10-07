@@ -11,6 +11,7 @@
     input{
         border-radius: 4px ;
         height: 30px;
+        width: 60%;
     }
     button{
         border-radius: 4px;
@@ -21,37 +22,57 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        width: 40%;
+    &:hover{
+        background-color: darkgreen;
+    }
     }
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .app{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     /* height: 300px; */
-    width: 410px;
+    min-width: 400px;
+    max-width: 410px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
     flex-direction: column;
+
     gap: 10px;
-    padding: 20px;
+    padding: 8px;
     
 }
 
 .header{
     background-color: orange;
-    height: 50px;
-    width: 100%;
+    /* height: 50px; */
+    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    /* flex-direction: row; */
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .rows{
     /* border: 1px solid black; */
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .cont{
@@ -63,7 +84,7 @@
 }
 
 .one{
-    width: 200px;
+    width: auto;
     /* border: 1px solid blue; */
     height: 100px;
     display: flex;
@@ -92,7 +113,7 @@
 }
 
 .two{
-    width: 200px;
+    width: auto;
     /* border: 1px solid yellow; */
     height: 100px;
     display: flex;
@@ -113,3 +134,12 @@
 
 
 
+#wicon{
+    width: 26px;
+    height: 26px;
+}
+
+#weatherForm{
+    display: flex;
+    flex-wrap: wrap;
+}
