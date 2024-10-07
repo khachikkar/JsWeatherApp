@@ -1,0 +1,44 @@
+.app{
+    border: 1px solid red;
+    /* height: 300px; */
+    width: 400px;
+}
+
+.header{
+    background-color: orange;
+    height: 50px;
+    width: 100%;
+
+}
+
+.cont{
+    display: flex;
+    border: 1px solid green;
+    flex-wrap: wrap;
+}
+
+.one{
+    width: 50%;
+    border: 1px solid blue;
+    height: 100px;
+}
+
+.two{
+    width: 48%;
+    border: 1px solid yellow;
+    height: 100px;
+}
+
+.tri{
+        width: 100%;
+        border: 1px solid black;
+        height: 120px;
+    
+}
+
+
+.cityicons{
+    width: 10%;
+    border: 1px solid black;
+
+}
