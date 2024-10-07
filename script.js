@@ -24,7 +24,15 @@ console.log(city)
       }
       input.value = ""
       fetch(url)
-      .then(response => response.json())
+      
+      .then(response => {
+
+        if(!response.ok){
+            alert("write valid city name")
+        }
+
+        return response.json()
+      })
       .then(data=>{
 
         let iconCode = data.weather[0].icon;
