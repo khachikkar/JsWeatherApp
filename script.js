@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         e.preventDefault()
       let city = input.value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
 
 console.log(city)
 
       if(city == ""){
         alert("Pls write a city name")
       }
-
+      input.value = ""
       fetch(url)
       .then(response => response.json())
       .then(data=>{
@@ -42,7 +42,7 @@ console.log(city)
 
         temp.textContent = (tt - 273.15).toFixed(2) +" C"
       })
-
+       
 
 
 
