@@ -25,6 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
             country.textContent = sys.country;
             let tt = Number(main.temp);
             temp.textContent = (tt - 273.15).toFixed(2) + " C";
+            let iconCode = weather[0].icon;
+            let iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+        document.getElementById("wicon").src = iconUrl;
           })
           .catch((error) => console.error(error));
       },
@@ -60,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.getElementById("wicon").src = iconUrl;
 
-        console.log(data, ">>>>>");
         cityName.textContent = data.name;
         country.textContent = data.sys.country;
 
